@@ -11,6 +11,10 @@
   --black-color: #000;
 }
 
+body::-webkit-scrollbar {
+  width: 1px;
+}
+
 /* /////////////////////////////////////////////////// */
 /* Utilities */
 .container {
