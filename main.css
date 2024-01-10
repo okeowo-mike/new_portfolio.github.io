@@ -11,6 +11,10 @@
   --black-color: #000;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body::-webkit-scrollbar {
   width: 1px;
 }
@@ -26,8 +30,8 @@ body::-webkit-scrollbar {
 
 body {
   font-family: "Times New Roman", Times, serif;
-  font-size: 1.1rem;
-  line-height: 1.6;
+  font-size: 1rem;
+  line-height: 1;
   color: var(--white-color);
   background: var(--bg-color);
 }
@@ -97,8 +101,8 @@ ul {
 }
 
 nav {
-  background: rgb(0, 0, 0);
-  opacity: 0;
+  background: rgba(0, 0, 0, 0.543);
+
   width: 100%;
 }
 
@@ -231,7 +235,7 @@ nav {
 .border-work {
   margin: auto;
   border-top: 3px solid var(--main-color);
-  width: 11rem;
+  width: 10rem;
 }
 
 .expertise {
@@ -389,7 +393,7 @@ nav {
 .border-recent {
   margin: auto;
   border-top: 3px solid var(--main-color);
-  width: 16rem;
+  width: 15rem;
   padding-bottom: 4rem;
 }
 
