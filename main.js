@@ -24,14 +24,13 @@ window.addEventListener("load", run);
 window.addEventListener("resize", run);
 window.addEventListener("scroll", run);
 
-
 // smooth scrolling
 $("#main-nav a, .btn").on("click", function (event) {
     if (this.hash !== "") {
       event.preventDefault();
-  
+
       const hash = this.hash;
-  
+
       $("html, body").animate(
         {
           scrollTop: $(hash).offset().top - 100,
@@ -40,12 +39,12 @@ $("#main-nav a, .btn").on("click", function (event) {
       );
     }
   });
-  
-  // sticky menu transparency
-  window.addEventListener("scroll", function () {
-    if (window.scrollY > 100) {
-      document.querySelector("#main-nav").style.opacity = 0.75;
-    } else {
-      document.querySelector("#main-nav").style.opacity = 1;
-    }
-  });
+
+// sticky menu transparency
+window.addEventListener("scroll", function () {
+  if (window.scrollY > 100) {
+    document.querySelector("#main-nav").style.background = ' rgba(0, 0, 0, 0.7)';
+  } else {
+    document.querySelector("#main-nav").style.background = ' rgba(0, 0, 0, 0)';
+  }
+});
